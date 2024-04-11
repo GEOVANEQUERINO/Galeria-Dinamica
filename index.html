@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria-Dinâmica</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<main>
+    <form>
+        <label for="myfile">Selecione um arquivo:</label>      
+        <input type="file" id="imageInput" multiple>
+        <button id="addButton">Adicionar Imagem</button>
+    </form>
+    <div id="galleryContainer"></div>
+</main>
+<script src="script.js"></script>
 </body>
 </html>

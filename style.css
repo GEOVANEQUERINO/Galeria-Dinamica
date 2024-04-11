@@ -1,0 +1,33 @@
+ /* Estilizando as imagens */
+ #galleryContainer img {
+    width: 50%; /* Reduzindo o tamanho da imagem para 50% */
+    display: block; /* Permitindo que o margin funcione corretamente */
+    margin: 0 auto; /* Centralizando a imagem */
+    position: relative; /* Permitindo posicionamento absoluto do botão de remover */
+}
+
+/* Estilizando o botão de remover */
+#galleryContainer button {
+    width: 300px; /* Definindo a Largura do botão */
+    height: 50px; /*Definindo a Altura do botão */
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute; /* Posicionamento absoluto em relação à imagem */
+    top: 50%; /* Alinhamento vertical no meio da imagem */
+    left: 50%; /* Alinhamento horizontal no meio da imagem */
+    transform: translate(-50%, -50%); /* Centralizando o botão */
+    background-color: rgba(255, 0, 0, 0.7); /* Cor de fundo do botão */
+    color: black; /* Cor do texto do botão */
+    border: 1px; /* Removendo a borda */
+    padding: 5px 10px; /* Adicionando espaço interno ao botão */
+    border-radius: 5px; /* Arredondando as bordas do botão */
+    cursor: pointer; /* Alterando o cursor para indicar que o botão é clicável */
+    opacity: 0; /* Tornando o botão transparente inicialmente */
+    transition: opacity 0.3s ease-in-out; /* Adicionando uma transição suave para a propriedade de opacidade */
+}
+
+/* Exibindo o botão de remover ao passar o mouse sobre a imagem */
+#galleryContainer img:hover + button {
+    opacity: 1 /* Tornando o botão visível quando o mouse está sobre a imagem */
+}
